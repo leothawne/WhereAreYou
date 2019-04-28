@@ -1,6 +1,6 @@
 name: WhereAreYou
 description: A tool to helps OPs on finding players current locations in Minecraft 1.13.x.
-version: 0.1.0
+version: 0.1.1
 api-version: 1.13
 load: STARTUP
 author: [leothawne]

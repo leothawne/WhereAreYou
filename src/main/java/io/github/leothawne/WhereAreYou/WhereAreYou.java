@@ -66,7 +66,7 @@ public class WhereAreYou extends JavaPlugin {
 			LanguageLoader.check(this, myLogger, configuration);
 			language = LanguageLoader.load(this, myLogger, configuration);
 			getCommand("whereareyou").setExecutor(new WhereAreYouCommand(myLogger, language));
-			getCommand("whereareyouadmin").setExecutor(new WhereAreYouAdminCommand(this, myLogger, configuration, language));
+			getCommand("whereareyouadmin").setExecutor(new WhereAreYouAdminCommand(this, myLogger, language));
 			getCommand("whereareyou").setTabCompleter(new WhereAreYouCommandTabCompleter());
 			getCommand("whereareyouadmin").setTabCompleter(new WhereAreYouAdminCommandTabCompleter(this));
 			scheduler = getServer().getScheduler();

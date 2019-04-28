@@ -39,7 +39,7 @@ public class WhereAreYouAdminCommandTabCompleter extends TabCompleterAPI impleme
 		List<String> ReturnNothing = new ArrayList<>();
 		if(sender.hasPermission("WhereAreYou.use") && sender.hasPermission("WhereAreYou.admin")) {
 			if(args.length == 1) {
-				ImmutableList<String> WRU = ImmutableList.of("version", "find", "teleport");
+				ImmutableList<String> WRU = ImmutableList.of("version", "find", "tp");
 				return partial(args[0], WRU);
 			} else if(args.length == 2 && args[0].equalsIgnoreCase("find")) {
 				List<String> WRU = new ArrayList<String>();
@@ -48,7 +48,7 @@ public class WhereAreYouAdminCommandTabCompleter extends TabCompleterAPI impleme
 					WRU.add(player.getName());
 				}
 				return partial(args[1], WRU);
-			} else if(args.length == 2 && args[0].equalsIgnoreCase("teleport")) {
+			} else if(args.length == 2 && args[0].equalsIgnoreCase("tp")) {
 				List<String> WRU = new ArrayList<String>();
 				WRU.add("me");
 				for(Player player : plugin.getServer().getOnlinePlayers()) {
